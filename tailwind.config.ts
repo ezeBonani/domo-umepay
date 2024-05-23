@@ -8,6 +8,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        OpenSans: ["Open Sans", "serif"],
+      },
       colors: {
         green: {
           50: '#30AF5B',
@@ -48,6 +51,15 @@ module.exports = {
       borderRadius: {
         '5xl': '40px',
       },
+      animation: {
+				fade: 'fadeIn 4s ease-in-out',
+			},
+			keyframes: {
+				fadeIn: {
+					from: { opacity: 0 },
+					to: { opacity: 1 },
+				},
+			},
     },
   },
   plugins: [],
