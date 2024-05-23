@@ -33,4 +33,4 @@ export const IMAGES = [
 
 export const airbnbLink = "https://www.airbnb.com.ar/rooms/850879322098352034?guests=1&adults=1&s=67&unique_share_id=d1ff842a-50a3-4edd-b09f-fb402d9f71b0"
 
-export const instagram = "https:www.instagram.com/domoumepay";
+export const instagram = "https://www.instagram.com/domoumepay";
