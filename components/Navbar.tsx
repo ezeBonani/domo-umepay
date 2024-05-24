@@ -24,7 +24,7 @@ function Navbar() {
     <nav className="flexBetween gap-20 padding-container z-30 py-1 md:py-3 sticky top-0 bg-white w-full font-serif">
 
       <Link href="/" className="">
-        <Image src="/logo-domo.png" alt="logo" width={280} height={70} quality={100}  />
+        <Image src="/logo-domo.png" alt="logo" width={200} height={50} quality={100}  className="w-3/4 md:w-full p-2"/>
       </Link>
 
       <ul className="hidden h-full lg:flex justify-between flex-1">
