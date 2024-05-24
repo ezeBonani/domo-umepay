@@ -15,10 +15,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <meta property="og:image" content="/logo-domo.png" />
+      <meta property="og:image" content="/opengraph.png" />
       <meta property="og:image:type" content="png" />
-      <meta property="og:image:width" content="456" />
-      <meta property="og:image:height" content="100" />
+      <meta property="og:image:width" content="90" />
+      <meta property="og:image:height" content="90" />
       <body>
       <Navbar/>
       <main className="relative overflow-hidden">
