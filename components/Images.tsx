@@ -26,7 +26,7 @@ function Images() {
         }
         }}
         modules={[Navigation,Pagination]}
-        className="h-[280px] md:h-[450vh] lg:h-[80vh] w-full md:rounded-lg text-xs text-white">
+        className="h-[280px] md:h-[450vh] lg:h-[85vh] w-full md:rounded-lg text-xs text-white">
           {IMAGES.map((image,index) => {
             return <SwiperSlide key={index}>
               <div className="flex h-full w-full items-center justify-center relative">

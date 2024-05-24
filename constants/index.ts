@@ -9,6 +9,8 @@ export const NAV_LINKS = [
   { href: '#location', key: 'location', label: 'Ubicación' },
 ];
 
+export const serviceImgWidth = 35, serviceImgHeight = 35;
+
 export const IMAGES = [
   {src:"https://res.cloudinary.com/ezebonani/image/upload/v1716398543/domo%20umepay/1_ukvz52.webp", alt:"domo1"},
   {src:"https://res.cloudinary.com/ezebonani/image/upload/v1716398543/domo%20umepay/2_md4uvt.webp", alt:"domo2"},
@@ -27,10 +29,15 @@ export const IMAGES = [
   {src:"https://res.cloudinary.com/ezebonani/image/upload/v1716398558/domo%20umepay/15_ecfnsy.webp", alt:"domo15"},
   {src:"https://res.cloudinary.com/ezebonani/image/upload/v1716398557/domo%20umepay/16_m0gwz8.webp", alt:"domo16"},
   {src:"https://res.cloudinary.com/ezebonani/image/upload/v1716398564/domo%20umepay/17_mkzc0m.webp", alt:"domo17"},
-  {src:"https://res.cloudinary.com/ezebonani/image/upload/v1716398562/domo%20umepay/18_orpjlx.webp", alt:"domo18"},
-  {src:"https://res.cloudinary.com/ezebonani/image/upload/v1716398561/domo%20umepay/19_aebvbt.webp", alt:"domo19"},
+  {src:"https://res.cloudinary.com/ezebonani/image/upload/v1716513788/domo%20umepay/18_x9wabj.webp", alt:"domo18"},
+  {src:"https://res.cloudinary.com/ezebonani/image/upload/v1716513788/domo%20umepay/19_auaszc.webp", alt:"domo19"},
+  {src:"https://res.cloudinary.com/ezebonani/image/upload/v1716513789/domo%20umepay/20_veq39m.webp", alt:"domo20"},
+  {src:"https://res.cloudinary.com/ezebonani/image/upload/v1716513789/domo%20umepay/21_hylgbq.webp", alt:"domo21"},
+
 ]
 
 export const airbnbLink = "https://www.airbnb.com.ar/rooms/850879322098352034?guests=1&adults=1&s=67&unique_share_id=d1ff842a-50a3-4edd-b09f-fb402d9f71b0"
 
 export const instagram = "https://www.instagram.com/domoumepay";
+
+export const whatsapp = "https://wa.me/+5491154966950?text=Hola!%20Quiero%20consultarte%20sobre%20el%20Domo%20Umepay%20"
