@@ -30,7 +30,7 @@ function Services() {
                 <Image src="/wifi.png" alt="wifi" width={serviceImgWidth} height={serviceImgHeight} />
                 <span>WiFi</span></div>
             </div>          
-          <p className='text-xs text-slate-700'>(*) Incluimos leña y productos biodegradables: shampoo, acondicionador y detergente</p>
+          <p className='text-xs text-slate-700 italic'>(*) Incluimos leña y productos biodegradables: shampoo, acondicionador y detergente</p>
         </div>
         </div>
       </section>
