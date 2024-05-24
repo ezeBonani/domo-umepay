@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Domo Umepay",
-  description: "Domo Umepay mountain glamping",
+  description: "Glamping de Montaña",
 };
 
 export default function RootLayout({
@@ -15,6 +15,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <meta property="og:image" content="/logo-domo.png" />
+      <meta property="og:image:type" content="/png" />
       <body>
       <Navbar/>
       <main className="relative overflow-hidden">
