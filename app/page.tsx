@@ -7,8 +7,6 @@ import Pricing from "@/components/Pricing";
 import Services from "@/components/Services";
 
 export default function Home() {
-
-
   return (
     <div>
       <Hero/>
