@@ -1,5 +1,4 @@
 import React, { Suspense } from 'react'
-import VideoComponent from './VideoComponent'
 
 function Hero() {
   return (
