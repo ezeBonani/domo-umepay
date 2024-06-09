@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div>
         <Hero/>
-      <Fade delay={200} duration={1500} fraction={0.15} cascade damping={0.1} triggerOnce={true} >
+      <Fade delay={200} duration={2000} fraction={0.15} cascade damping={0.1} triggerOnce={true} >
         <Domo/>
         <Services/>
         <Images/>
