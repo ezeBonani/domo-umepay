@@ -1,3 +1,6 @@
+"use client"
+import {Fade} from "react-awesome-reveal"
+
 import Contact from "@/components/Contact";
 import Domo from "@/components/Domo";
 import Hero from "@/components/Hero";
@@ -9,13 +12,15 @@ import Services from "@/components/Services";
 export default function Home() {
   return (
     <div>
-      <Hero/>
-      <Domo/>
-      <Services/>
-      <Images/>
-      <Pricing/>
-      <Contact/>
-      <Location/>
+        <Hero/>
+      <Fade delay={100} duration={1500} fraction={0.15} cascade damping={0.2} triggerOnce={true} >
+        <Domo/>
+        <Services/>
+        <Images/>
+        <Pricing/>
+        <Contact/>
+        <Location/>
+      </Fade>
     </div>
   );
 }
