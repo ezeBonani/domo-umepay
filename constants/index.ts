@@ -41,3 +41,6 @@ export const airbnbLink = "https://www.airbnb.com.ar/rooms/850879322098352034?gu
 export const instagram = "https://www.instagram.com/domoumepay";
 
 export const whatsapp = "https://wa.me/+5491154966950?text=Hola!%20Quiero%20consultarte%20sobre%20el%20Domo%20Umepay%20"
+
+export const videoUrl= "https://res.cloudinary.com/ezebonani/video/upload/du_10/v1717719891/domo%20umepay/drone_rmh2te.webm"
+
