@@ -2,7 +2,8 @@
 import {Swiper, SwiperSlide} from "swiper/react";
 import { Navigation, Pagination} from "swiper/modules";
 
-import { IMAGES } from "@/constants"
+
+import { IMAGES, dataURL} from "@/constants"
 
 import "swiper/css"
 import "swiper/css/navigation"
@@ -11,10 +12,11 @@ import "swiper/css/pagination"
 import Image from "next/image";
 
 function Images() {
+
   return (
-    <section className='images flex flex-col justify-center items-center py-4' id="images">
+    <section className='images flex flex-col justify-center items-center py-4 mt-4 md:mt-14' id="images">
       <div className="wrapper w-full md:w-[90%] lg:w-[70%]">
-        <Swiper 
+        <Swiper
         loop={true}
         navigation
         pagination={{
@@ -27,10 +29,11 @@ function Images() {
         }}
         modules={[Navigation,Pagination]}
         className="h-[280px] md:h-[450px] lg:h-[85vh] w-full md:rounded-lg text-xs text-white">
+
           {IMAGES.map((image,index) => {
             return <SwiperSlide key={index}>
               <div className="flex h-full w-full items-center justify-center relative">
-                <Image src={image.src} alt={image.alt} fill className="object-cover" loading="lazy"/>
+                <Image src={image.src} alt={image.alt} fill className={`object-cover`}  loading="lazy" placeholder="blur" blurDataURL={dataURL} />
               </div>
             </SwiperSlide>
           })}

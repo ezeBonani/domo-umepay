@@ -4,7 +4,7 @@ import {airbnbLink, instagram, whatsapp} from "@/constants"
 
 function Contact() {
   return (
-    <section className='contact py-2 mb-4' id="contact">
+    <section className='contact py-2 mb-4 md:mt-8' id="contact">
       <div className='wrapper w-full font-serif flex flex-col justify-center items-center'>
         <div className="social flex flex-col bg-slate-100  p-6 rounded-md gap-8 md:items-center md:flex-row md:justify-center text-sm text-center">
           <div className="item flex flex-col items-center justify-center gap-2 w-[150px] ">

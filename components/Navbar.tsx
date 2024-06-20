@@ -24,11 +24,11 @@ function Navbar() {
     <nav className="flexBetween gap-24 padding-container z-30 py-1 sticky top-0 bg-white w-full font-serif">
 
       <Link href="/" className="">
-        <Image src="/logo-domo.png" alt="logo" width={200} height={50} quality={100}  className="w-3/4 md:full p-2"/>
+        <Image src="/logo-domo.png" alt="logo" width={200} height={50} quality={100}  className="w-3/4 md:full p-2" priority={true} />
       </Link>
 
       <ul className="hidden h-full lg:flex justify-between flex-1">
-        {NAV_LINKS.map((link)=> (<Link href={link.href} key={link.key} className="regular-16 text-grey-50 flexCenter cursor-pointer pd-1.5"><span className="transition-all hover:scale-105">{link.label}</span></Link>))}
+        {NAV_LINKS.map((link)=> (<Link href={link.href} key={link.key} className="regular-16 text-grey-50 flexCenter cursor-pointer pd-1.5"><span className="transition-all hover:scale-110 duration-300">{link.label}</span></Link>))}
       </ul>
 
       {/* Responsibe Menu */}

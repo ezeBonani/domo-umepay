@@ -1,7 +1,7 @@
 
 function Domo() {
   return (
-    <section className='domo md:mt-20 py-4' id="domo_umepay">
+    <section className='domo mt-2 md:mt-24 py-4 md:mb-12' id="domo_umepay">
       <div className="flex flex-col w-full items-center justify-center font-serif">
         <div className='flex justify-center items-center flex-col w-3/4'>
           <h2 className='text-4xl md:text-6xl mt-6 tracking-wider'>Domo Umepay</h2>

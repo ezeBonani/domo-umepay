@@ -1,6 +1,6 @@
 export default function Location() {
   return (
-    <section id="location" className="mb-6">
+    <section id="location" className="mb-6 md:mt-12">
       <div className="wrapper w-full md:w-3/4 md:mx-auto flex flex-col justify-center items-center py-8 font-serif">
         <p className='wrapper text-sm text-center pb-6 px-6 md:w-3/4 text-slate-700'>
           El Domo Umepay se encuentra en la localidad de Villa Yacanto de Calamuchita, provincia de Córdoba (a 1 hora en auto desde Villa General Belgrano). Está a una altura de 1150 msnm.
