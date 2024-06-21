@@ -9,6 +9,11 @@ export const NAV_LINKS = [
   { href: '#location', key: 'location', label: 'Ubicación' },
 ];
 
+export const reviewsImg = [
+  {src: "/superhost.jpg"},
+  {src: "/google5stars.webp"}
+]
+
 export const serviceImgWidth = 35, serviceImgHeight = 35;
 
 export const IMAGES = [

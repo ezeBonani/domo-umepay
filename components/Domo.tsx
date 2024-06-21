@@ -1,3 +1,6 @@
+import Image from "next/image"
+
+import { reviewsImg } from "@/constants"
 
 function Domo() {
   return (
@@ -7,6 +10,10 @@ function Domo() {
           <h2 className='text-4xl md:text-6xl mt-6 tracking-wider'>Domo Umepay</h2>
           <h3 className='mb-6'>- Glamping de Montaña -</h3>
           <p className='text-base md:text-lg text-center py-4 md:w-3/4' >Disfrutá de un entorno natural con tecnología y confort en un domo geodésico ubicado en el barrio &quot;La Aldea&quot; dentro de la Ecoaldea Umepay, a 30 minutos de Villa Yacanto de Calamuchita</p>
+          <div className="mt-2 md:mt-10 text-center flex justify-center items-center gap-8 md:gap-20 text-xs md:text-sm text-wrap">
+            <Image src={reviewsImg[0].src} width={200} height={100} alt="superhost"/>
+            <Image src={reviewsImg[1].src} width={200} height={100} alt="google5stars"/>
+          </div>
         </div>
       </div>
     </section>
