@@ -20,6 +20,7 @@ export default function RootLayout({
       <meta property="og:image:type" content="png" />
       <meta property="og:image:width" content="90" />
       <meta property="og:image:height" content="90" />
+      <meta name="google-site-verification" content="5PWJ7zgZ4jQ3Czd77vljc5UT0DzCiHwgbv7kFKpGQO0" />
       <body>
       <Navbar/>
       <main className="relative overflow-hidden">
