@@ -14,7 +14,7 @@ export const reviewsImg = [
   {src: "/google5stars.webp"}
 ]
 
-export const serviceImgWidth = 35, serviceImgHeight = 35;
+export const serviceImgWidth = 40, serviceImgHeight = 40;
 
 export const IMAGES = [
   {src:"https://res.cloudinary.com/ezebonani/image/upload/v1716398543/domo%20umepay/1_ukvz52.webp", alt:"domo1"},

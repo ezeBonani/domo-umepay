@@ -1,46 +1,77 @@
-"use client"
-import {Swiper, SwiperSlide} from "swiper/react";
-import { Navigation, Pagination} from "swiper/modules";
+"use client";
 
-
-import { IMAGES, dataURL} from "@/constants"
-
-import "swiper/css"
-import "swiper/css/navigation"
-import "swiper/css/pagination"
-
+import { useRef, useState } from "react";
 import Image from "next/image";
+import Lightbox from "yet-another-react-lightbox";
+import Zoom from "yet-another-react-lightbox/plugins/zoom";
+import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
+import Slideshow from "yet-another-react-lightbox/plugins/slideshow";
+
+import "yet-another-react-lightbox/styles.css";
+import "yet-another-react-lightbox/plugins/thumbnails.css";
+import "yet-another-react-lightbox/plugins/counter.css";
+
+import { IMAGES, dataURL } from "@/constants";
+import { Counter, Fullscreen } from "yet-another-react-lightbox/plugins";
 
 function Images() {
+  const [open, setOpen] = useState(false);
+  const [index, setIndex] = useState(0);
+
+  const slides = IMAGES.map((image) => ({
+    src: image.src,
+    alt: image.alt,
+  }));
+
+  const fullscreenRef = useRef(null);
 
   return (
-    <section className='images flex flex-col justify-center items-center py-4 mt-4 md:mt-14' id="images">
-      <div className="wrapper w-full md:w-[90%] lg:w-[70%]">
-        <Swiper
-        loop={true}
-        navigation
-        pagination={{
-          type: 'fraction',
-          renderFraction: function (currentClass, totalClass) {
-            return ('<div class="bg-slate-500 w-[70px] mx-auto rounded-lg p-1 opacity-75"><span class="' + currentClass + '"></span>' +
-                    ' / ' +
-                    '<span class="' + totalClass + '"></span><div>');
-        }
-        }}
-        modules={[Navigation,Pagination]}
-        className="h-[280px] md:h-[450px] lg:h-[85vh] w-full md:rounded-lg text-xs text-white">
-
-          {IMAGES.map((image,index) => {
-            return <SwiperSlide key={index}>
-              <div className="flex h-full w-full items-center justify-center relative">
-                <Image src={image.src} alt={image.alt} fill className={`object-cover`}  loading="lazy" placeholder="blur" blurDataURL={dataURL} />
-              </div>
-            </SwiperSlide>
-          })}
-        </Swiper>
+    <section
+      className="images flex flex-col justify-center items-center py-4 mt-4 md:mt-14"
+      id="images"
+    >
+      <p className="text-base md:text-lg px-8 md:px-14 text-center leading-loose text-slate-800 font-serif pb-4">
+        Imágenes del Domo
+      </p>
+      <div className="wrapper grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 w-full md:w-[90%] lg:w-[70%] px-2">
+        {IMAGES.map((image, idx) => (
+          <div
+            key={idx}
+            className="relative cursor-pointer aspect-video"
+            onClick={() => {
+              setIndex(idx);
+              setOpen(true);
+            }}
+          >
+            <Image
+              src={image.src}
+              alt={image.alt}
+              fill
+              className="object-cover rounded"
+              placeholder="blur"
+              blurDataURL={dataURL}
+            />
+          </div>
+        ))}
       </div>
+
+      <Lightbox
+        open={open}
+        close={() => setOpen(false)}
+        slides={slides}
+        index={index}
+        plugins={[Zoom, Fullscreen, Counter]}
+        counter={{
+          container: {
+            style: {
+              top: "unset",
+              bottom: 0,
+            },
+          },
+        }}
+      />
     </section>
-  )
+  );
 }
 
-export default Images
+export default Images;
