@@ -17,14 +17,12 @@ export const reviewsImg = [
 export const serviceImgWidth = 40, serviceImgHeight = 40;
 
 export const IMAGES = [
-  {src:"https://res.cloudinary.com/ezebonani/image/upload/v1716398543/domo%20umepay/1_ukvz52.webp", alt:"domo1"},
+  /* {src:"https://res.cloudinary.com/ezebonani/image/upload/v1716398543/domo%20umepay/1_ukvz52.webp", alt:"domo1"},
   {src:"https://res.cloudinary.com/ezebonani/image/upload/v1716398543/domo%20umepay/2_md4uvt.webp", alt:"domo2"},
-  {src:"https://res.cloudinary.com/ezebonani/image/upload/v1716398544/domo%20umepay/3_zbuuwg.webp", alt:"domo3"},
   {src:"https://res.cloudinary.com/ezebonani/image/upload/v1716398546/domo%20umepay/4_czbnng.webp", alt:"domo4"},
-  {src:"https://res.cloudinary.com/ezebonani/image/upload/v1716398545/domo%20umepay/5_vwrbwl.webp", alt:"domo5"},
-  {src:"https://res.cloudinary.com/ezebonani/image/upload/v1716398548/domo%20umepay/6_kox6si.webp", alt:"domo6"},
-  {src:"https://res.cloudinary.com/ezebonani/image/upload/v1716398547/domo%20umepay/7_jea2kz.webp", alt:"domo7"},
+  {src:"https://res.cloudinary.com/ezebonani/image/upload/v1716398545/domo%20umepay/5_vwrbwl.webp", alt:"domo5"}, */
   {src:"https://res.cloudinary.com/ezebonani/image/upload/v1716398549/domo%20umepay/8_dxbxdr.webp", alt:"domo8"},
+  {src:"https://res.cloudinary.com/ezebonani/image/upload/v1716398547/domo%20umepay/7_jea2kz.webp", alt:"domo7"},
   {src:"https://res.cloudinary.com/ezebonani/image/upload/v1716398551/domo%20umepay/9_gbdmqy.webp", alt:"domo9"},
   {src:"https://res.cloudinary.com/ezebonani/image/upload/v1716398557/domo%20umepay/10_qyfkns.webp", alt:"domo10"},
   {src:"https://res.cloudinary.com/ezebonani/image/upload/v1716398550/domo%20umepay/11_suftds.webp", alt:"domo11"},
@@ -36,6 +34,8 @@ export const IMAGES = [
   {src:"https://res.cloudinary.com/ezebonani/image/upload/v1716398564/domo%20umepay/17_mkzc0m.webp", alt:"domo17"},
   {src:"https://res.cloudinary.com/ezebonani/image/upload/v1716513788/domo%20umepay/18_x9wabj.webp", alt:"domo18"},
   {src:"https://res.cloudinary.com/ezebonani/image/upload/v1716513788/domo%20umepay/19_auaszc.webp", alt:"domo19"},
+  {src:"https://res.cloudinary.com/ezebonani/image/upload/v1716398548/domo%20umepay/6_kox6si.webp", alt:"domo6"},
+  {src:"https://res.cloudinary.com/ezebonani/image/upload/v1716398544/domo%20umepay/3_zbuuwg.webp", alt:"domo3"},
   {src:"https://res.cloudinary.com/ezebonani/image/upload/v1716513789/domo%20umepay/20_veq39m.webp", alt:"domo20"},
   {src:"https://res.cloudinary.com/ezebonani/image/upload/v1716513789/domo%20umepay/21_hylgbq.webp", alt:"domo21"},
 

@@ -33,7 +33,7 @@ function Images() {
       <p className="text-base md:text-lg px-8 md:px-14 text-center leading-loose text-slate-800 font-serif pb-4">
         Imágenes del Domo
       </p>
-      <div className="wrapper grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 w-full md:w-[90%] lg:w-[70%] px-2">
+      <div className="wrapper grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 w-full md:w-[90%] lg:w-[70%] px-4">
         {IMAGES.map((image, idx) => (
           <div
             key={idx}
